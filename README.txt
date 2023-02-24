@@ -1,6 +1,6 @@
 Popescu Ioan Emanuel Theodor - 333CB
 
-	Pentru implementarea temei am folosit in mare urmatorul approach: generez M + R
+	Pentru implementarea proiectului am folosit in mare urmatorul approach: generez M + R
 thread-uri (M-nr. mappere, R-nr. reducere), pe care le diferentiez doar dupa id:
 	0->M-1: thread mapper; M->M+R-1: thread reducer;
 	Functia care va fi rulata de fiecare thread verifica dupa id tipul thread-ului
@@ -11,9 +11,6 @@ terminat toate mapperele.
 	Distributia fisierelor pe mappere a fost facuta static, sortand crescator
 fisierele dupa numarul de elemente din ele, apoi atribuind fiecarui mapper cate unul in
 ordine pana la epuizare.
-	Motivatia pentru folosirea variabilelor globale a fost usurinta implementarii,
-din cauza unui poor time management am ajuns in criza de timp cu tema si am sechele cu
-seg fault(n-am dorit sa mi se reactiveze PTSD-ul).
 	M-am folosit de mai multe structuri de date, majoritatea fiind destul de usor de
 inteles din comentariile din cod, dar am sa intru in detalii pentru structura argument,
 care a servit la incapsularea mai multor structuri intr-o singura variabila. Existenta ei
